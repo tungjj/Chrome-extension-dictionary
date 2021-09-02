@@ -4,13 +4,15 @@ body{
 
 }
 
-a {
+a i{
     
     margin: 20px 0 0 0 ;
     padding: 0 0 0 0;
     color: black;
     display: block;
+    color: gray;
 }  
+a:hover i{ color: black;} 
 
 
 p{
@@ -23,18 +25,17 @@ p{
     height: auto;
     border-bottom: 1px solid grey;
 }
-
 .word-box .word-above{
     display: flex;
     height: auto;
+    margin-left: 10px;
 }
-
 .word-box .word-above p, i{
-    
     margin-right: 10px;
     padding-top: 0;
 }
 
+/* Pronunciation of UK and US */
 .pronunciation-box{
     border-bottom: 1px solid grey;
     
@@ -52,7 +53,7 @@ p{
 }
 
 
-
+/* Vietnam definication */
 .def-1st{
     border-bottom: 1px solid grey;
 }
@@ -62,6 +63,7 @@ p{
 }
 #definition { margin-left: 10px;}
 
+ /* English definication  */
 .def-2nd{
     border-bottom: 1px solid grey;
 }
@@ -70,7 +72,3 @@ p{
     margin-right: 10px;
 }
 #definition-en { margin-left: 10px;}
-
-hr{
-    margin-top: 1px;
-}

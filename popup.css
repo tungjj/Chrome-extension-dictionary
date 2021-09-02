@@ -4,14 +4,14 @@ body{
 
 }
 
-a{
-    text-decoration: none;
-    padding-top: 20px;
-    padding-bottom: auto;
+a {
     
-    
+    margin: 20px 0 0 0 ;
+    padding: 0 0 0 0;
     color: black;
+    display: block;
 }  
+
 
 p{
     padding: auto;
@@ -54,18 +54,22 @@ p{
 
 
 .def-1st{
-    display: flex;
+    border-bottom: 1px solid grey;
 }
-
 .def-1st p i{
     font-size: 20px;
     margin-right: 10px;
 }
+#definition { margin-left: 10px;}
 
-#definition_en i{
+.def-2nd{
+    border-bottom: 1px solid grey;
+}
+.def-2nd p i {
     font-size: 20px;
     margin-right: 10px;
 }
+#definition-en { margin-left: 10px;}
 
 hr{
     margin-top: 1px;

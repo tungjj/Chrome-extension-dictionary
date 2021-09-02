@@ -13,18 +13,18 @@ a i{
     color: gray;
 }  
 a:hover i{ color: black;} 
-
-
 p{
     padding: auto;
     font-size: 20px;
 }
 
+/* Display word which is selected */
 .word-box{
-    width:250px;
+    width:300px;
     height: auto;
     border-bottom: 1px solid grey;
 }
+#txt-input{font-weight: bold;}
 .word-box .word-above{
     display: flex;
     height: auto;
@@ -34,6 +34,7 @@ p{
     margin-right: 10px;
     padding-top: 0;
 }
+#type-of-word{margin-left: 50px;padding-right: 0;margin-right: 0; float: right;}
 
 /* Pronunciation of UK and US */
 .pronunciation-box{
@@ -41,7 +42,6 @@ p{
     
 }
 .pronunciation-box p {
-    width: 95px;
     height: inherit;
     margin: 0px 10px 0 10px ;
     padding: 18px 0px 10px 0;

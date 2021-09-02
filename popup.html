@@ -7,17 +7,33 @@
 
   <body >
     <h1>My dictionary!</h1>
+  
+
 
     <div class="word-box" >
       <div class="word-above">
-        <a id="audio" >
+        <p id="txt-input">Like</p>
+        <p class="kindof"> verb</p>
+      </div>
+    </div>
+
+    <div class="pronunciation-box">
+      <div class="en-gb">
+        <p>Oxford UK</p>
+        <a id="audio-uk" >
           <i class="fas fa-volume-up"></i>
         </a>
-        <p id="txt-input"></p>
+        <p id="pronunciation">/Lai k/</p>
       </div>
-      <p id="pronunciation"></p>
+
+      <div class="en-us">
+        <p>Oxford US</p>
+        <a id="audio-us" >
+          <i class="fas fa-volume-up"></i>
+        </a>
+        <p id="pronunciation">/Lai kow/</p>
+      </div>
     </div>
-    
     <div class="def-1st" >
       <p id="definition">
         <span>Vietnamese definition</span> 
@@ -25,7 +41,7 @@
       </p>
     </div>  
 
-    <div>
+    <div class="def-2nd">
       <p id="definition-en">
         <span>English definition</span>
         <i class="fa-3x fas fa-sync fa-spin"></i> 

@@ -45,7 +45,7 @@ p{
     height: inherit;
     margin: 0px 10px 0 10px ;
     padding: 18px 0px 10px 0;
-    
+    width: 95px;
 }
 .flex{
     display: flex;

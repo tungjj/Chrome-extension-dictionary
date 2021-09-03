@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="popup.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   </head>
 
   <body >
-    <h1>My dictionary!</h1>
+    <h2>Từ điểm Anh Việt</h2>
   
 
 
     <div class="word-box" >
       <div class="word-above">
         <p id="txt-input" ></p>
-        <p id="type-of-word" > ()</p>
+        <p id="type-of-word" class="hidden"> ()</p>
       </div>
     </div>
 
-    <div class="pronunciation-box">
+    <div class="pronunciation-box hidden">
       <div class="en-gb flex">
         <p>Oxford UK</p>
         <a id="audio-uk" >
@@ -42,15 +45,15 @@
       </p>
     </div>  
 
-    <div class="def-2nd">
+    <div class="def-2nd hidden">
       <p id="definition-en">
         <span>English definition</span>
         <i class="fa-3x fas fa-sync fa-spin"></i> 
       </p>
     </div>
 
-    <h3>Symnonym</h3> 
-    <p id="synonym"></p>
+    <h3 class="hidden">Symnonym</h3> 
+    <p id="synonym" class="hidden"></p>
 
     <script src="popup.js"></script>
   </body>

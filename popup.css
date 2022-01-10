@@ -1,41 +1,78 @@
 body{
     font-size: medium;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
-a{
-    text-decoration: none;
-    padding-top: 20px;
-    padding-bottom: auto;
+
+a i{
     
+    margin: 20px 0 0 0 ;
+    padding: 0 0 0 0;
     color: black;
+    display: block;
+    color: gray;
 }  
-p{font-size: 20px;}
-
-.word-box{
-    width:250px;
-    height: auto;
+a:hover i{ color: black;} 
+p{
+    padding: auto;
+    font-size: 20px;
 }
+
+/* Display word which is selected */
+.word-box{
+    width:300px;
+    height: auto;
+    border-bottom: 1px solid grey;
+}
+#txt-input{font-weight: bold;}
 .word-box .word-above{
     display: flex;
     height: auto;
+    margin-left: 10px;
 }
 .word-box .word-above p, i{
     margin-right: 10px;
     padding-top: 0;
 }
-#pronunciation{
-    padding-left: 28px;
-    margin:0;
+#type-of-word{margin-left: 50px;padding-right: 0;margin-right: 0; float: right;}
+
+/* Pronunciation of UK and US */
+.pronunciation-box{
+    border-bottom: 1px solid grey;
+    
 }
-.def-1st{display: flex;}
+.pronunciation-box p {
+    height: inherit;
+    margin: 0px 10px 0 10px ;
+    padding: 18px 0px 10px 0;
+    width: 95px;
+}
+.flex{
+    display: flex;
+    padding: 0px;
+}
+
+
+/* Vietnam definication */
+.def-1st{
+    border-bottom: 1px solid grey;
+}
 .def-1st p i{
-    font-size: 20px;
-    margin-right: 10px;}
-#definition_en i{
     font-size: 20px;
     margin-right: 10px;
 }
-hr{
-    margin-top: 1px;
+#definition { margin-left: 10px;}
+
+ /* English definication  */
+.def-2nd{
+    border-bottom: 1px solid grey;
+}
+.def-2nd p i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+#definition-en { margin-left: 10px;}
+
+/* hide something */
+.hidden{
+    display: none;
 }

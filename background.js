@@ -1,5 +1,5 @@
 console.log('background running');
-window.word = "this is background scope";
+// window.word = "this is background scope";
 
 
 chrome.runtime.onMessage.addListener(receiver);

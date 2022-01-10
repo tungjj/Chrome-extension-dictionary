@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="popup.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   </head>
+
   <body >
-    <h1>My dictionary!</h1>
+    <h2>Từ điểm Anh Việt</h2>
+  
+
+
     <div class="word-box" >
       <div class="word-above">
-        
-        <a id="audio" ><i class="fas fa-volume-up"></i></a>
-        <p type="text" id="text_input">Input</p> 
+        <p id="txt-input" ></p>
+        <p id="type-of-word" class="hidden"> ()</p>
       </div>
-      <p id="pronunciation"> / /</p>
     </div>
-    
-    <hr>
-    <div class="def-1st" >
-      <p id="definition">Vietnamese definition
-        
-        <i class="fa-3x fas fa-sync fa-spin"></i>
-         
-      </p>
-      
-    </div>
-    <hr>
-    <p id="definition_en">English definition <i class="fa-3x fas fa-sync fa-spin"></i> </p>
-    <hr>
-    <h3>Symnonym</h3> 
-    <p id="synonym"></p>
 
-    
-    
+    <div class="pronunciation-box hidden">
+      <div class="en-gb flex">
+        <p>Oxford UK</p>
+        <a id="audio-uk" >
+          <i class="fas fa-volume-up"></i>
+        </a>
+        <p id="pronunciation-uk">/ /</p>
+      </div>
+
+      <div class="en-us flex">
+        <p>Oxford US</p>
+        <a id="audio-us" >
+          <i class="fas fa-volume-up"></i>
+        </a>
+        <p id="pronunciation-us">/ /</p>
+      </div>
+    </div>
+
+    <div class="def-1st" >
+      <p id="definition">
+        <span>Vietnamese definition</span> 
+        <i class="fa-3x fas fa-sync fa-spin"></i>
+      </p>
+    </div>  
+
+    <div class="def-2nd hidden">
+      <p id="definition-en">
+        <span>English definition</span>
+        <i class="fa-3x fas fa-sync fa-spin"></i> 
+      </p>
+    </div>
+
+    <h3 class="hidden">Symnonym</h3> 
+    <p id="synonym" class="hidden"></p>
+
     <script src="popup.js"></script>
-    <script src="popup1.js"></script>
-    <!-- <script src="dictionary-api.js"></script> -->
-   
   </body>
 </html>
